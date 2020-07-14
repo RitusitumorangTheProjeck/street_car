@@ -50,42 +50,7 @@ def createlawan(slp,max):
     global mobillawan,tstop
     yy,xx = max
     while not tstop:
-      if not pause:
-         mobillawan.append([2,random.randint(0,xx-1)])
-         time.sleep(slp)
-    return
-
-def lawan(sls,max):
-    global mobillawan,tstop,score,slo
-    yy,xx = max
-    while not tstop:
-      for n,i in enumerate(mobillawan):
-          if i[0] < yy and not pause:
-             try:
-                mobillawan[n][0] += 1
-             except IndexError:
-                pass
-      if not pause:
-         score += 0.01
-         time.sleep(sls)
-    return
-
-def curo(c,speed_spawn = 0.5,speed_movement = 0.3):
-    global mobillawan,health,pause,slo
-    curses.curs_set(0)
-    yy,xx = c.getmaxyx()
-    car = [yy-2,xx//2-1]
-    c.erase()
-    c.addstr(car[0]-2,car[1],"o-o")
-    c.addstr(car[0]-1,car[1],"|+|")
-    c.addstr(car[0],car[1],"o-o")
-    c.addstr(yy-1,0,"-"*(xx-1))
-    c.attron(curses.color_pair(1))
-    c.addstr(yy//2,xx//2 - len("Press right or left to move the car")//2,"Press right or left to move the car")
-    c.attroff(curses.color_pair(1))
-    c.addstr(0,xx-len("Made by JustA Hacker")-1,"Made by JustA Hacker")
-    c.addstr(1,0,"-"*(xx-1))
-    c.addstr(0,xx//2-health//2,"❤"*health+"   ")
+      if not pae,sSceript Kontol lth+"   ")
     c.refresh()
     sthread = True
     lose = False
